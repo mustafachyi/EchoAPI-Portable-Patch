@@ -1,9 +1,9 @@
 # EchoAPI Portable Patcher
 
-Simple patch script to make EchoAPI truly portable by storing all data in the app directory. Just needs Node.js.
+Simple patch script to make EchoAPI Desktop (Electron) truly portable by storing all data in the app directory.
 
 ## Features
-- Makes EchoAPI fully portable
+- Makes EchoAPI Desktop fully portable
 - Stores all data in app directory
 - Performance optimizations
 - Easy to apply/revert
@@ -11,13 +11,14 @@ Simple patch script to make EchoAPI truly portable by storing all data in the ap
 
 ## Requirements
 - Node.js installed
-- EchoAPI
+- EchoAPI Desktop (Electron version)
+- Windows OS (Linux/Mac support untested)
 
 ## Usage
 
 ### Apply Patch
 1. Download `patch.js`
-2. Place it in EchoAPI's root directory (next to `EchoAPI.exe`)
+2. Place it in EchoAPI Desktop's root directory (next to `EchoAPI.exe`)
 3. Open terminal in that directory
 4. Run:
 ```bash
@@ -36,6 +37,8 @@ After patching, all app data will be stored in:
 ```
 
 ## Notes
+- Only tested on Windows
+- Works with the Desktop (Electron) version of EchoAPI
 - Creates automatic backup before patching
 - Safe to revert anytime
 - Preserves user data if desired
